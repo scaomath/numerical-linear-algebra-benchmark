@@ -4,11 +4,12 @@ https://stackoverflow.com/questions/11443302/compiling-numpy-with-openblas-integ
 '''
 import numpy as np
 from time import time
+np.__config__.show()
 
 #%% Let's take the randomness out of random numbers (for reproducibility)
 np.random.seed(0)
 
-size = 8192
+size = 4096
 A, B = np.random.random((size, size)), np.random.random((size, size))
 C, D = np.random.random((size * 128,)), np.random.random((size * 128,))
 E = np.random.random((int(size / 2), int(size / 4)))
