@@ -29,7 +29,7 @@ del A, B
 #%% Vector multiplication
 N = 5000
 t = time()
-for i in range(N):
+for i in range(N): 
     np.dot(C, D)
 delta = time() - t
 print('Dotted two vectors of length %d in %0.2f ms.' % (size * 128, 1e3 * delta / N))
